@@ -28,9 +28,6 @@ HashMap storing number -> index
 For each number, check if complement (target - num) is already in the dict
 If yes, return both indices. If no, store current number and index.
 
-Why this approach?
-Single pass. Looking up complement in dict is O(1).
-
 Complexity:
 Time Complexity: O(n)
 Space Complexity: O(n)
