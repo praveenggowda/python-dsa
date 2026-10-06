@@ -30,9 +30,7 @@ print(my_atoi("  42"))    # 42
 print(my_atoi("42abc"))   # 42
 print(my_atoi(""))        # 0
 
-
         
         
     
-
 

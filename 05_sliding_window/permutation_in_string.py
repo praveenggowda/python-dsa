@@ -1,6 +1,5 @@
 from collections import defaultdict
 
-
 def check_inclusion(s1: str, s2: str) -> bool:
     target = defaultdict(int)
     window_count = defaultdict(int)
@@ -24,14 +23,12 @@ def check_inclusion(s1: str, s2: str) -> bool:
 
     return False
 
-
 if __name__ == "__main__":
     print(check_inclusion("ab", "eidbaooo"))  # True
     print(check_inclusion("ab", "eidboaoo"))  # False
     print(check_inclusion("adc", "dcda"))     # True
     print(check_inclusion("abc", "a"))        # False
     print(check_inclusion("a", "a"))          # True
-
 
 # CLARIFICATIONS
 # Return True if any permutation of s1 is a substring of s2

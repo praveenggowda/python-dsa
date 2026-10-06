@@ -13,7 +13,6 @@ def remove_element(nums: list[int], val: int) -> int:
 
     return left
 
-
 if __name__ == "__main__":
     nums1 = [3, 2, 2, 3]
     k1 = remove_element(nums1, 3)
@@ -26,7 +25,6 @@ if __name__ == "__main__":
     nums3 = [3, 3]
     k3 = remove_element(nums3, 3)
     print(nums3[:k3])  # []
-
 
 # CLARIFICATIONS
 # Remove all occurrences of val in-place

@@ -16,7 +16,6 @@ def longest_ones(nums: list[int], k: int) -> int:
 
     return max_length
 
-
 if __name__ == "__main__":
     print(longest_ones([1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0], 2))  # 6
     print(longest_ones([0, 0, 1, 1, 1, 0, 0], 0))               # 3
@@ -24,7 +23,6 @@ if __name__ == "__main__":
     print(longest_ones([0, 0, 0, 0], 2))                         # 2
     print(longest_ones([1, 0, 1, 0, 1, 0, 1], 1))               # 3
     print(longest_ones([], 2))                                   # 0
-
 
 # CLARIFICATIONS
 # Binary array of 0s and 1s

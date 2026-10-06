@@ -1,6 +1,5 @@
 from collections import defaultdict
 
-
 def find_anagrams(s: str, p: str) -> list[int]:
     target = defaultdict(int)
     window = defaultdict(int)
@@ -25,13 +24,11 @@ def find_anagrams(s: str, p: str) -> list[int]:
 
     return output
 
-
 if __name__ == "__main__":
     print(find_anagrams("cbaebabacd", "abc"))  # [0, 6]
     print(find_anagrams("abab", "ab"))         # [0, 1, 2]
     print(find_anagrams("aa", "bb"))           # []
     print(find_anagrams("a", "a"))             # [0]
-
 
 # CLARIFICATIONS
 # Return all starting indices in s where an anagram of p begins

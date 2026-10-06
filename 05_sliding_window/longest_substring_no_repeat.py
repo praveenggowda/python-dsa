@@ -13,7 +13,6 @@ def longest_substring_no_repeat_set(s: str) -> int:
 
     return max_length
 
-
 def longest_substring_no_repeat_map(s: str) -> int:
     left = 0
     seen = {}
@@ -29,7 +28,6 @@ def longest_substring_no_repeat_map(s: str) -> int:
 
     return max_length
 
-
 if __name__ == "__main__":
     for fn in [longest_substring_no_repeat_set, longest_substring_no_repeat_map]:
         print(fn("abcabcbb"))  # 3
@@ -39,7 +37,6 @@ if __name__ == "__main__":
         print(fn(" "))         # 1
         print(fn("abba"))      # 2
         print("---")
-
 
 # CLARIFICATIONS
 # Return the length of the longest substring with no repeated characters

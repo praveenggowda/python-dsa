@@ -1,6 +1,5 @@
 from collections import defaultdict
 
-
 def total_fruit(fruits: list[int]) -> int:
     left = 0
     max_length = 0
@@ -19,14 +18,12 @@ def total_fruit(fruits: list[int]) -> int:
 
     return max_length
 
-
 if __name__ == "__main__":
     print(total_fruit([1, 2, 1]))       # 3
     print(total_fruit([0, 1, 2, 2]))    # 3
     print(total_fruit([1, 2, 3, 2, 2])) # 4
     print(total_fruit([]))              # 0
     print(total_fruit([1]))             # 1
-
 
 # CLARIFICATIONS
 # You have two baskets, each can hold only one type of fruit

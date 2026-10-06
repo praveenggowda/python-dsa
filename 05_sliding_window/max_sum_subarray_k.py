@@ -24,7 +24,6 @@ if __name__ == "__main__":
     print(maximum_sum([2, 3], 3))              # 0
     print(maximum_sum([], 0))                  # 0
 
-
 # CLARIFICATIONS
 # k <= 0 or len(nums) < k: return 0 — no valid window exists
 # Array can contain negative numbers — max_sum starts at -inf not 0

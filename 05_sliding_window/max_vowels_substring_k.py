@@ -23,14 +23,12 @@ def max_vowels(s: str, k: int) -> int:
 
     return max_count
 
-
 if __name__ == "__main__":
     print(max_vowels("abciiidef", 3))  # 3
     print(max_vowels("aeiou", 2))      # 2
     print(max_vowels("leetcode", 3))   # 2
     print(max_vowels("rhythms", 4))    # 0
     print(max_vowels("a", 1))          # 1
-
 
 # CLARIFICATIONS
 # k <= 0 or len(s) < k: return 0 — no valid window exists

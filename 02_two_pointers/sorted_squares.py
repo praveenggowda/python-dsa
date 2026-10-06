@@ -19,7 +19,6 @@ def sorted_squares(nums: list[int]) -> list[int]:
 
     return result
 
-
 if __name__ == "__main__":
     print(sorted_squares([-4, -1, 0, 3, 10]))    # [0, 1, 9, 16, 100]
     print(sorted_squares([-7, -3, 2, 3, 11]))    # [4, 9, 9, 49, 121]
@@ -31,7 +30,6 @@ if __name__ == "__main__":
     print(sorted_squares([-2, -1, 0, 1, 2]))    # [0, 1, 1, 4, 4]
     print(sorted_squares([-3, -3, -2, 1]))      # [1, 4, 9, 9]
     print(sorted_squares([-10_000, 10_000]))    # [100000000, 100000000]
-
 
 # CLARIFICATIONS
 # Input is sorted in non-decreasing order (may contain negatives)

@@ -32,7 +32,6 @@
 #
 #   Time: O(log n) | Space: O(1)
 
-
 def search_in_rotated_sorted_array(nums: list[int], target: int) -> int:
     left = 0
     right = len(nums) - 1
@@ -55,7 +54,6 @@ def search_in_rotated_sorted_array(nums: list[int], target: int) -> int:
                 right = mid - 1
 
     return -1
-
 
 if __name__ == "__main__":
     print(search_in_rotated_sorted_array([4, 5, 6, 7, 0, 1, 2], 0))  # expect 4

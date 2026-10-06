@@ -8,7 +8,6 @@ def remove_duplicates(nums: list[int]) -> int:
 
     return left
 
-
 if __name__ == "__main__":
     nums1 = [1, 1, 2]
     k1 = remove_duplicates(nums1)
@@ -17,7 +16,6 @@ if __name__ == "__main__":
     nums2 = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
     k2 = remove_duplicates(nums2)
     print(nums2[:k2])  # [0, 1, 2, 3, 4]
-
 
 # CLARIFICATIONS
 # Input array is sorted — duplicates are always adjacent

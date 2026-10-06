@@ -17,13 +17,11 @@ def is_valid_palindrome(s: str) -> bool:
 
     return True
 
-
 if __name__ == "__main__":
     print(is_valid_palindrome("A man, a plan, a canal: Panama"))  # True
     print(is_valid_palindrome("race a car"))                       # False
     print(is_valid_palindrome(""))                                 # True
     print(is_valid_palindrome("L ,  UUL"))                        # True
-
 
 # CLARIFICATIONS
 # Ignore non-alphanumeric characters (spaces, commas, colons)

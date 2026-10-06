@@ -9,6 +9,5 @@ def reverse_string(s):
 
     return "".join(chars)
 
-
 print(reverse_string("hello"))    # olleh
 print(reverse_string("Praveen"))  # neeverP

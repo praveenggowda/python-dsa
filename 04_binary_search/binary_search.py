@@ -45,7 +45,6 @@
 #   Time: O(log n)
 #   Space: O(1)
 
-
 def binary_search(nums: list[int], target: int) -> int:
     left = 0
     right = len(nums) - 1
@@ -62,7 +61,6 @@ def binary_search(nums: list[int], target: int) -> int:
             left = mid + 1
 
     return -1
-
 
 if __name__ == "__main__":
     print(binary_search([], 0))                      # expect -1

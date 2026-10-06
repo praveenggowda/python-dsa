@@ -11,7 +11,6 @@ def valid_palindrome(s: str) -> bool:
 
     return True
 
-
 def is_palindrome(s: str, left: int, right: int) -> bool:
     while left < right:
         if s[left] == s[right]:
@@ -22,14 +21,12 @@ def is_palindrome(s: str, left: int, right: int) -> bool:
 
     return True
 
-
 if __name__ == "__main__":
     print(valid_palindrome("aba"))    # True
     print(valid_palindrome("abca"))   # True
     print(valid_palindrome("abc"))    # False
     print(valid_palindrome("deeee"))  # True
     print(valid_palindrome("cbbcc"))  # True
-
 
 # CLARIFICATIONS
 # Can delete at most one character

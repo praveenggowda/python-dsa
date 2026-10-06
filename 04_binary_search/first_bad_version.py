@@ -80,7 +80,6 @@
 # Time: O(log n)
 # Space: O(1)
 
-
 def first_bad_version(n: int, bad: int) -> int:
     def isBadVersion(version: int) -> bool:
         return version >= bad
@@ -97,7 +96,6 @@ def first_bad_version(n: int, bad: int) -> int:
             left = mid + 1
 
     return left
-
 
 if __name__ == "__main__":
     print(first_bad_version(5, 4))   # expect 4

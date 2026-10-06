@@ -1,6 +1,5 @@
 from collections import defaultdict
 
-
 def character_replacement(s: str, k: int) -> int:
     left = 0
     max_length = 0
@@ -24,13 +23,11 @@ def character_replacement(s: str, k: int) -> int:
 
     return max_length
 
-
 if __name__ == "__main__":
     print(character_replacement("ABAB", 2))    # 4
     print(character_replacement("AABABBA", 1)) # 4
     print(character_replacement("AAAA", 2))    # 4
     print(character_replacement("A", 0))       # 1
-
 
 # CLARIFICATIONS
 # You can replace at most k characters in the string

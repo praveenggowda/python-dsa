@@ -52,7 +52,6 @@
 #   Time: O(log n)
 #   Space: O(1)
 
-
 def search_insert(nums: list[int], target: int) -> int:
     left = 0
     right = len(nums) - 1
@@ -69,7 +68,6 @@ def search_insert(nums: list[int], target: int) -> int:
             left = mid + 1
 
     return left
-
 
 if __name__ == "__main__":
     print(search_insert([1, 3, 5, 6], 5))  # expect 2
