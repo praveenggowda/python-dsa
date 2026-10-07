@@ -19,7 +19,7 @@ Solutions are written with clean code and type hints.
 | 09 | Tries | ⬜ Pending | |
 | 10 | Intervals | ⬜ Pending | |
 | 11 | Greedy | ✅ Done | best_time_to_buy_and_sell |
-| 12 | Backtracking | ⬜ Pending | |
+| 12 | Backtracking | 🔄 In Progress | permutations |
 | 13 | Graphs | ⬜ Pending | |
 | 14 | Advanced Graphs | ⬜ Pending | |
 | 15 | 1-D Dynamic Programming | 🔄 In Progress | house_robber |
