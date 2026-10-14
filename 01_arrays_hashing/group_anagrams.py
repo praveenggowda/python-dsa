@@ -24,8 +24,8 @@ Clarifications:
 - Order within groups does not matter
 
 Brute Force:
-Sort each string, compare every pair
-Time: O(n² * k log k)  Space: O(n)
+For each word, sort it. Use the sorted string as a dict key and group words under it.
+Time: O(n * k log k)  Space: O(n * k)
 
 Optimized Approach:
 Sort each string -> use as dict key

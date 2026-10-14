@@ -1,3 +1,35 @@
+"""
+Problem: Valid Palindrome II
+LeetCode: 680
+Category: Two Pointers
+Difficulty: Easy
+
+Problem Statement:
+Given a string s, return true if the s can be palindrome after deleting at most one character.
+
+Examples:
+Input: s = "aba"   ->  Output: True
+Input: s = "abca"  ->  Output: True  (remove 'c' or 'b')
+Input: s = "abc"   ->  Output: False
+
+Clarifications:
+- Can delete at most one character
+- Case-sensitive, no non-alphanumeric filtering (unlike Valid Palindrome I)
+- Empty string and single character are palindromes
+
+Brute Force:
+Try deleting each character one by one, check if palindrome each time
+Time: O(n²)  Space: O(n)
+
+Optimised:
+Two pointers from opposite ends, on first mismatch try skipping left OR skipping right.
+If either remaining window is a palindrome return True.
+Time: O(n)  Space: O(1)
+
+Pattern: Two Pointers
+"""
+
+
 def valid_palindrome(s: str) -> bool:
     left = 0
     right = len(s) - 1
@@ -28,18 +60,3 @@ if __name__ == "__main__":
     print(valid_palindrome("deeee"))  # True
     print(valid_palindrome("cbbcc"))  # True
 
-# CLARIFICATIONS
-# Can delete at most one character
-# After deletion, check if the remaining string is a palindrome
-# Case-sensitive, no non-alphanumeric filtering (unlike Valid Palindrome I)
-
-# BRUTE FORCE
-# Try deleting each character one by one, check if palindrome each time
-# Time: O(n^2)   Space: O(n)
-
-# OPTIMISED — Two pointers + helper
-# Scan from both ends while characters match
-# On first mismatch: try skipping left OR skipping right
-# If either remaining window is a palindrome → True
-# Helper is_palindrome checks a substring by index range, no new string allocated
-# Time: O(n)   Space: O(1)

@@ -1,3 +1,37 @@
+"""
+Problem: Valid Palindrome
+LeetCode: 125
+Category: Two Pointers
+Difficulty: Easy
+
+Problem Statement:
+A phrase is a palindrome if, after converting all uppercase letters to lowercase
+and removing all non-alphanumeric characters, it reads the same forward and backward.
+Given a string s, return true if it is a palindrome, or false otherwise.
+
+Examples:
+Input: s = "A man, a plan, a canal: Panama"  ->  Output: True
+Input: s = "race a car"                       ->  Output: False
+Input: s = ""                                 ->  Output: True
+
+Clarifications:
+- Ignore non-alphanumeric characters (spaces, commas, colons)
+- Case-insensitive comparison
+- Empty string returns True (palindrome by definition)
+
+Brute Force:
+Clean the string first (filter non-alnum, lowercase), then compare to its reverse
+Time: O(n)  Space: O(n)
+
+Optimised:
+Two pointers from opposite ends, skip non-alphanumeric with inner while loops,
+compare lowercase characters, move inward on match
+Time: O(n)  Space: O(1)
+
+Pattern: Two Pointers
+"""
+
+
 def is_valid_palindrome(s: str) -> bool:
     left = 0
     right = len(s) - 1
@@ -23,17 +57,3 @@ if __name__ == "__main__":
     print(is_valid_palindrome(""))                                 # True
     print(is_valid_palindrome("L ,  UUL"))                        # True
 
-# CLARIFICATIONS
-# Ignore non-alphanumeric characters (spaces, commas, colons)
-# Case-insensitive comparison
-# Empty string → True (palindrome by definition)
-
-# BRUTE FORCE
-# Clean the string first (filter non-alnum, lowercase), then compare to its reverse
-# Time: O(n)   Space: O(n)  (new string allocated)
-
-# OPTIMISED — Two Pointers (opposite ends)
-# Left pointer at 0, right pointer at len-1
-# Skip non-alphanumeric from both sides using inner while loops
-# Compare lowercase characters, move both pointers inward
-# Time: O(n)   Space: O(1)  (no extra string, just two pointers)
